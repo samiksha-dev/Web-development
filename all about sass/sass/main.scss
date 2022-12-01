@@ -1,0 +1,48 @@
+//variable are denoted by $ in sass eg.
+$color-blue: blue; //therefor color-blue is a name of variable
+$color-listing: red;
+h1,
+p {
+  color: $color-blue; //we assigned variable color-blue to color
+}
+//alag alag bhi likh skte ho
+
+//this concept is called as listing
+//agr css me krte toh
+//div ul li{
+//color:red //isse bs li ka color chng hoga
+//}
+div {
+  ul {
+    background-color: yellow;
+    li {
+      list-style: none; //taaki li mw jo dots aate hai woh na aae
+      color: $color-blue;
+      display: inline-block;
+      a {
+        color: $color-listing;
+        //text-decoration taaki jo anchor tags jb use kro toh line aato hai na woh chali jae
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//@mixin-jaise maan lo tumne 3 4 tags me same styling ki hai toh unn chaaro me likhne ki zaroorat nhi hai
+@mixin commonstyling {
+  color: $color-blue;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include commonstyling;
+  border-style: dotted;
+}
+h3 {
+  @include commonstyling;
+}
+h4 {
+  @include commonstyling;
+}

@@ -1,0 +1,32 @@
+h1,
+p {
+  color: blue; }
+
+div ul {
+  background-color: yellow; }
+  div ul li {
+    list-style: none;
+    color: blue;
+    display: inline-block; }
+    div ul li a {
+      color: red;
+      text-decoration: none; }
+
+h2 {
+  color: blue;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-style: dotted; }
+
+h3 {
+  color: blue;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h4 {
+  color: blue;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
